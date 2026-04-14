@@ -10,9 +10,20 @@ public class fullNameParseApp {
         String fullName = logger.nextLine();
 
         String[] data = fullName.split(" ");
-        System.out.println("First name:"+data[0]);
-        System.out.println("Middle name:"+data[1]);
-        System.out.println("Last name:"+data[2]);
+
+
+        if(data.length > 2){
+            System.out.println("First name:"+data[0]);
+            System.out.println("Middle name:"+data[1]);
+            System.out.println("Last name:"+data[2]);
+        }
+        else {
+            System.out.println("First name:"+data[0]);
+            System.out.println("Last name:"+data[1]);
+        }
+
+
+
 
     }
 }
